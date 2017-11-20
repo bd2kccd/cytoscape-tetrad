@@ -49,7 +49,7 @@ public class ImportTetradFileAction extends AbstractCyAction {
         JFileChooser chooser = new JFileChooser();
 
         FileNameExtensionFilter filter = new FileNameExtensionFilter(
-                "Tetrad Output File (.txt)", "txt");
+                "Tetrad Output File (.json)", "json");
         chooser.setFileFilter(filter);
 
         int returnVal = chooser.showOpenDialog(cytoPanelWest.getComponentAt(0));

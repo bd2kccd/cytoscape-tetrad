@@ -1,5 +1,8 @@
 package edu.pitt.dbmi.ccd.cytoscape.tetrad;
 
+import edu.cmu.tetrad.graph.Endpoint;
+import edu.cmu.tetrad.graph.Graph;
+import edu.cmu.tetrad.util.JsonUtils;
 import org.cytoscape.model.*;
 import org.cytoscape.session.CyNetworkNaming;
 import org.cytoscape.task.read.LoadVizmapFileTaskFactory;
@@ -11,15 +14,12 @@ import org.cytoscape.view.vizmap.VisualStyle;
 import org.cytoscape.work.AbstractTask;
 import org.cytoscape.work.TaskMonitor;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.regex.Pattern;
 
 public class CreateNetworkTask extends AbstractTask {
 
@@ -50,35 +50,74 @@ public class CreateNetworkTask extends AbstractTask {
 
 
     public List<Edge> extractEdgesFromFile(final String fileName) {
-        List<Edge> nodes = new LinkedList<>();
+        List<Edge> cytoEdges = new LinkedList<>();
 
 
         Path file = Paths.get(fileName);
-        try (BufferedReader reader = Files.newBufferedReader(file, Charset.defaultCharset())) {
-            Pattern space = Pattern.compile("\\s+");
-            boolean isData = false;
-            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
-                line = line.trim();
-                if (isData) {
-                    String[] data = space.split(line, 2);
-                    if (data.length == 2) {
-                        String value = data[1].trim();
-                        String[] edgeValues = space.split(value);
-                        if (edgeValues.length == 3) {
-                            CharSequence source = edgeValues[0].trim();
-                            CharSequence target = edgeValues[2].trim();
-                            CharSequence type = edgeValues[1].trim();
-                            nodes.add(new Edge(source.toString(), target.toString(), type.toString()));
-                        }
-                    }
-                } else if ("Graph Edges:".equals(line)) {
-                    isData = true;
+
+
+        try {
+            String contents = new String(Files.readAllBytes(file));
+
+            Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
+
+            Set<edu.cmu.tetrad.graph.Edge> edges = graph.getEdges();
+
+            for(edu.cmu.tetrad.graph.Edge edge : edges) {
+                String edgeType = "";
+
+                Endpoint endpoint1 = edge.getEndpoint1();
+                Endpoint endpoint2 = edge.getEndpoint2();
+
+                switch (endpoint1) {
+                    case Endpoint.ARROW:
+                        continue;
+                    case Endpoint.CIRCLE:
+                        continue;
+
+
                 }
+
+
+
+
+
+                cytoEdges.add(new Edge(edge.getNode1().getName(), edge.getNode2().getName(), edgeType))
             }
-        } catch (IOException exception) {
-            // TODO: use cytoscape logger
-            System.err.println(String.format("Unable to read file '%s'. \n%s", fileName, exception));
+
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
+
+//        try (BufferedReader reader = Files.newBufferedReader(file, Charset.defaultCharset())) {
+//            Pattern space = Pattern.compile("\\s+");
+//            boolean isData = false;
+//            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+//                line = line.trim();
+//                if (isData) {
+//                    String[] data = space.split(line, 2);
+//                    if (data.length == 2) {
+//                        String value = data[1].trim();
+//                        String[] edgeValues = space.split(value);
+//                        if (edgeValues.length == 3) {
+//                            CharSequence source = edgeValues[0].trim();
+//                            CharSequence target = edgeValues[2].trim();
+//                            CharSequence type = edgeValues[1].trim();
+//                            nodes.add(new Edge(source.toString(), target.toString(), type.toString()));
+//                        }
+//                    }
+//                } else if ("Graph Edges:".equals(line)) {
+//                    isData = true;
+//                }
+//            }
+//        } catch (IOException exception) {
+//            // TODO: use cytoscape logger
+//            System.err.println(String.format("Unable to read file '%s'. \n%s", fileName, exception));
+//        }
 
         return nodes;
     }
