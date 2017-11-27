@@ -69,7 +69,8 @@ public class CreateNetworkTask extends AbstractTask {
 
                 // Extract the probability of an edge - find out what column name in cytoscape Mark needs is in
                 // Will need to use the latest release of Tetrad to have this feature available
-                //List<edu.cmu.tetrad.graph.EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
+                List<edu.cmu.tetrad.graph.EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
+
                 // Create a new Edge(String source, String target, String type)
                 // This is the cyto edge object in this package, not the edu.cmu.tetrad.graph.Edge
                 Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType);
