@@ -1,0 +1,7055 @@
+{
+  "nodes": [
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 225,
+      "centerY": 45,
+      "name": "X1"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 270,
+      "centerY": 58,
+      "name": "X10"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 312,
+      "centerY": 79,
+      "name": "X11"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 346,
+      "centerY": 112,
+      "name": "X12"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 367,
+      "centerY": 154,
+      "name": "X13"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 374,
+      "centerY": 200,
+      "name": "X14"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 367,
+      "centerY": 245,
+      "name": "X15"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 346,
+      "centerY": 287,
+      "name": "X16"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 313,
+      "centerY": 321,
+      "name": "X17"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 271,
+      "centerY": 342,
+      "name": "X18"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 225,
+      "centerY": 349,
+      "name": "X19"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 180,
+      "centerY": 342,
+      "name": "X2"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 138,
+      "centerY": 321,
+      "name": "X20"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 105,
+      "centerY": 288,
+      "name": "X3"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 83,
+      "centerY": 247,
+      "name": "X4"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 76,
+      "centerY": 200,
+      "name": "X5"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 83,
+      "centerY": 155,
+      "name": "X6"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 104,
+      "centerY": 113,
+      "name": "X7"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 137,
+      "centerY": 80,
+      "name": "X8"
+    },
+    {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 178,
+      "centerY": 58,
+      "name": "X9"
+    }
+  ],
+  "edgesSet": [
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 270,
+        "centerY": 58,
+        "name": "X10"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 313,
+        "centerY": 321,
+        "name": "X17"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.2
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.8
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 245,
+        "name": "X15"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 83,
+        "centerY": 155,
+        "name": "X6"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 45,
+        "name": "X1"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 137,
+        "centerY": 80,
+        "name": "X8"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 180,
+        "centerY": 342,
+        "name": "X2"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 178,
+        "centerY": 58,
+        "name": "X9"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 76,
+        "centerY": 200,
+        "name": "X5"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 313,
+        "centerY": 321,
+        "name": "X17"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.8
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 374,
+        "centerY": 200,
+        "name": "X14"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 245,
+        "name": "X15"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 105,
+        "centerY": 288,
+        "name": "X3"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 104,
+        "centerY": 113,
+        "name": "X7"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 180,
+        "centerY": 342,
+        "name": "X2"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 270,
+        "centerY": 58,
+        "name": "X10"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 312,
+        "centerY": 79,
+        "name": "X11"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 313,
+        "centerY": 321,
+        "name": "X17"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 83,
+        "centerY": 155,
+        "name": "X6"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 178,
+        "centerY": 58,
+        "name": "X9"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 180,
+        "centerY": 342,
+        "name": "X2"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 245,
+        "name": "X15"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.3
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.7
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 271,
+        "centerY": 342,
+        "name": "X18"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 137,
+        "centerY": 80,
+        "name": "X8"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 83,
+        "centerY": 247,
+        "name": "X4"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 245,
+        "name": "X15"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 83,
+        "centerY": 155,
+        "name": "X6"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 270,
+        "centerY": 58,
+        "name": "X10"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 346,
+        "centerY": 112,
+        "name": "X12"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 138,
+        "centerY": 321,
+        "name": "X20"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 178,
+        "centerY": 58,
+        "name": "X9"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 346,
+        "centerY": 287,
+        "name": "X16"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 45,
+        "name": "X1"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 271,
+        "centerY": 342,
+        "name": "X18"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.9
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 154,
+        "name": "X13"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 76,
+        "centerY": 200,
+        "name": "X5"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.5
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 45,
+        "name": "X1"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 349,
+        "name": "X19"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 180,
+        "centerY": 342,
+        "name": "X2"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 154,
+        "name": "X13"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 105,
+        "centerY": 288,
+        "name": "X3"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 349,
+        "name": "X19"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 313,
+        "centerY": 321,
+        "name": "X17"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 367,
+        "centerY": 154,
+        "name": "X13"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 104,
+        "centerY": 113,
+        "name": "X7"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 349,
+        "name": "X19"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 312,
+        "centerY": 79,
+        "name": "X11"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 137,
+        "centerY": 80,
+        "name": "X8"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 0
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 312,
+        "centerY": 79,
+        "name": "X11"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 225,
+        "centerY": 349,
+        "name": "X19"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ta",
+          "probability": 1.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 178,
+        "centerY": 58,
+        "name": "X9"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 374,
+        "centerY": 200,
+        "name": "X14"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "node1": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 270,
+        "centerY": 58,
+        "name": "X10"
+      },
+      "node2": {
+        "categoriesCopy": [
+          "0",
+          "1"
+        ],
+        "discreteVariableType": {
+          "ordinal": 0
+        },
+        "categoryNamesDisplayed": true,
+        "nodeType": {
+          "ordinal": 0
+        },
+        "accommodateNewCategories": true,
+        "centerX": 178,
+        "centerY": 58,
+        "name": "X9"
+      },
+      "endpoint1": {
+        "ordinal": 0
+      },
+      "endpoint2": {
+        "ordinal": 1
+      },
+      "bold": false,
+      "properties": [],
+      "edgeTypeProbabilities": [
+        {
+          "edgeType": "nil",
+          "probability": 0.9
+        },
+        {
+          "edgeType": "ta",
+          "probability": 0.1
+        },
+        {
+          "edgeType": "at",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ca",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "ac",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "cc",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "aa",
+          "probability": 0.0
+        },
+        {
+          "edgeType": "tt",
+          "probability": 0.0
+        }
+      ]
+    }
+  ],
+  "edgeLists": {
+    "X20": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 346,
+          "centerY": 112,
+          "name": "X12"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 138,
+          "centerY": 321,
+          "name": "X20"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      }
+    ],
+    "X10": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.2
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.8
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 155,
+          "name": "X6"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X18": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 271,
+          "centerY": 342,
+          "name": "X18"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 137,
+          "centerY": 80,
+          "name": "X8"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 45,
+          "name": "X1"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 271,
+          "centerY": 342,
+          "name": "X18"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.9
+          }
+        ]
+      }
+    ],
+    "X15": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 155,
+          "name": "X6"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 374,
+          "centerY": 200,
+          "name": "X14"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.3
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.7
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 247,
+          "name": "X4"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X17": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.2
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.8
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 76,
+          "centerY": 200,
+          "name": "X5"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.8
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.2
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 312,
+          "centerY": 79,
+          "name": "X11"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 154,
+          "name": "X13"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X7": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 105,
+          "centerY": 288,
+          "name": "X3"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 104,
+          "centerY": 113,
+          "name": "X7"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 104,
+          "centerY": 113,
+          "name": "X7"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X14": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 374,
+          "centerY": 200,
+          "name": "X14"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 374,
+          "centerY": 200,
+          "name": "X14"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X12": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 346,
+          "centerY": 112,
+          "name": "X12"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 138,
+          "centerY": 321,
+          "name": "X20"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      }
+    ],
+    "X3": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 105,
+          "centerY": 288,
+          "name": "X3"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 104,
+          "centerY": 113,
+          "name": "X7"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 105,
+          "centerY": 288,
+          "name": "X3"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X9": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 155,
+          "name": "X6"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 346,
+          "centerY": 287,
+          "name": "X16"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 374,
+          "centerY": 200,
+          "name": "X14"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X19": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 45,
+          "name": "X1"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 105,
+          "centerY": 288,
+          "name": "X3"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 104,
+          "centerY": 113,
+          "name": "X7"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 312,
+          "centerY": 79,
+          "name": "X11"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X2": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.3
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.7
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 154,
+          "name": "X13"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X8": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 45,
+          "name": "X1"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 137,
+          "centerY": 80,
+          "name": "X8"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 1.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 271,
+          "centerY": 342,
+          "name": "X18"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 137,
+          "centerY": 80,
+          "name": "X8"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 312,
+          "centerY": 79,
+          "name": "X11"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 137,
+          "centerY": 80,
+          "name": "X8"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      }
+    ],
+    "X11": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 312,
+          "centerY": 79,
+          "name": "X11"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 312,
+          "centerY": 79,
+          "name": "X11"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 137,
+          "centerY": 80,
+          "name": "X8"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.1
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 312,
+          "centerY": 79,
+          "name": "X11"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X4": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 247,
+          "name": "X4"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X6": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 245,
+          "name": "X15"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 155,
+          "name": "X6"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 155,
+          "name": "X6"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 83,
+          "centerY": 155,
+          "name": "X6"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 270,
+          "centerY": 58,
+          "name": "X10"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X1": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 45,
+          "name": "X1"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 137,
+          "centerY": 80,
+          "name": "X8"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 1.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 45,
+          "name": "X1"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 271,
+          "centerY": 342,
+          "name": "X18"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.9
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 45,
+          "name": "X1"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 225,
+          "centerY": 349,
+          "name": "X19"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X13": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 154,
+          "name": "X13"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 76,
+          "centerY": 200,
+          "name": "X5"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.5
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.5
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 180,
+          "centerY": 342,
+          "name": "X2"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 154,
+          "name": "X13"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 154,
+          "name": "X13"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.9
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.1
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X16": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 178,
+          "centerY": 58,
+          "name": "X9"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 346,
+          "centerY": 287,
+          "name": "X16"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 1.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.0
+          }
+        ]
+      }
+    ],
+    "X5": [
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 76,
+          "centerY": 200,
+          "name": "X5"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 313,
+          "centerY": 321,
+          "name": "X17"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 1
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.8
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.2
+          }
+        ]
+      },
+      {
+        "node1": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 367,
+          "centerY": 154,
+          "name": "X13"
+        },
+        "node2": {
+          "categoriesCopy": [
+            "0",
+            "1"
+          ],
+          "discreteVariableType": {
+            "ordinal": 0
+          },
+          "categoryNamesDisplayed": true,
+          "nodeType": {
+            "ordinal": 0
+          },
+          "accommodateNewCategories": true,
+          "centerX": 76,
+          "centerY": 200,
+          "name": "X5"
+        },
+        "endpoint1": {
+          "ordinal": 0
+        },
+        "endpoint2": {
+          "ordinal": 0
+        },
+        "bold": false,
+        "properties": [],
+        "edgeTypeProbabilities": [
+          {
+            "edgeType": "nil",
+            "probability": 0.5
+          },
+          {
+            "edgeType": "ta",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "at",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ca",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "ac",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "cc",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "aa",
+            "probability": 0.0
+          },
+          {
+            "edgeType": "tt",
+            "probability": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  "ambiguousTriples": [],
+  "underLineTriples": [],
+  "dottedUnderLineTriples": [],
+  "stuffRemovedSinceLastTripleAccess": false,
+  "highlightedEdges": [],
+  "namesHash": {
+    "X8": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 137,
+      "centerY": 80,
+      "name": "X8"
+    },
+    "X19": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 225,
+      "centerY": 349,
+      "name": "X19"
+    },
+    "X9": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 178,
+      "centerY": 58,
+      "name": "X9"
+    },
+    "X10": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 270,
+      "centerY": 58,
+      "name": "X10"
+    },
+    "X20": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 138,
+      "centerY": 321,
+      "name": "X20"
+    },
+    "X12": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 346,
+      "centerY": 112,
+      "name": "X12"
+    },
+    "X1": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 225,
+      "centerY": 45,
+      "name": "X1"
+    },
+    "X11": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 312,
+      "centerY": 79,
+      "name": "X11"
+    },
+    "X14": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 374,
+      "centerY": 200,
+      "name": "X14"
+    },
+    "X2": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 180,
+      "centerY": 342,
+      "name": "X2"
+    },
+    "X13": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 367,
+      "centerY": 154,
+      "name": "X13"
+    },
+    "X3": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 105,
+      "centerY": 288,
+      "name": "X3"
+    },
+    "X16": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 346,
+      "centerY": 287,
+      "name": "X16"
+    },
+    "X4": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 83,
+      "centerY": 247,
+      "name": "X4"
+    },
+    "X15": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 367,
+      "centerY": 245,
+      "name": "X15"
+    },
+    "X5": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 76,
+      "centerY": 200,
+      "name": "X5"
+    },
+    "X18": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 271,
+      "centerY": 342,
+      "name": "X18"
+    },
+    "X6": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 83,
+      "centerY": 155,
+      "name": "X6"
+    },
+    "X17": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 313,
+      "centerY": 321,
+      "name": "X17"
+    },
+    "X7": {
+      "categoriesCopy": [
+        "0",
+        "1"
+      ],
+      "discreteVariableType": {
+        "ordinal": 0
+      },
+      "categoryNamesDisplayed": true,
+      "nodeType": {
+        "ordinal": 0
+      },
+      "accommodateNewCategories": true,
+      "centerX": 104,
+      "centerY": 113,
+      "name": "X7"
+    }
+  },
+  "pattern": false,
+  "pag": false
+}

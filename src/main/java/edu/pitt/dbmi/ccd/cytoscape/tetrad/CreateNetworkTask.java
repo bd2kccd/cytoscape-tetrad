@@ -1,6 +1,5 @@
 package edu.pitt.dbmi.ccd.cytoscape.tetrad;
 
-import edu.cmu.tetrad.graph.Endpoint;
 import edu.cmu.tetrad.graph.Graph;
 import edu.cmu.tetrad.util.JsonUtils;
 import java.io.IOException;
@@ -53,69 +52,37 @@ public class CreateNetworkTask extends AbstractTask {
         Path file = Paths.get(fileName);
 
         try {
-
-            // read json file
+            // Read Tetrad generated json file
             String contents = new String(Files.readAllBytes(file));
 
-            // parse to graph
+            // Parse to Tetrad graph
             Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
 
-            // extract the edges
-            Set<edu.cmu.tetrad.graph.Edge> edges = graph.getEdges();
+            // Extract the edges
+            Set<edu.cmu.tetrad.graph.Edge> tetradGraphEdges = graph.getEdges();
 
-            // for each edge determine the types of endpoints so you can figure out edge type
-            // basically convert to these -->  o-o o->
-            for (edu.cmu.tetrad.graph.Edge edge : edges) {
-                String edgeType = "";
+            // For each edge determine the types of endpoints to figure out edge type.
+            // Basically convert to these '-->', 'o-o', or 'o->' strings
+            for (edu.cmu.tetrad.graph.Edge tetradGraphEdge : tetradGraphEdges) {
+                // Produces a string representation of the edge
+                String edgeType = tetradGraphEdge.toString();
 
-                Endpoint endpoint1 = edge.getEndpoint1();
-                Endpoint endpoint2 = edge.getEndpoint2();
+                // Extract the probability of an edge - find out what column name in cytoscape Mark needs is in
+                // Will need to use the latest release of Tetrad to have this feature available
+                List<edu.cmu.tetrad.graph.EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
 
-                if (endpoint1 == Endpoint.ARROW || endpoint1 == Endpoint.CIRCLE) {
-                    continue;
-                }
-//                switch (endpoint1) {
-//                    case Endpoint.ARROW:
-//                        continue;
-//                    case Endpoint.CIRCLE:
-//                        continue;
-//
-//                }
+                // Create a new Edge(String source, String target, String type)
+                // This is the cyto edge object in this package, not the edu.cmu.tetrad.graph.Edge
+                Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType);
+                // Add to the list
+                cytoEdges.add(cytoEdge);
 
-                cytoEdges.add(new Edge(edge.getNode1().getName(), edge.getNode2().getName(), edgeType));
-
-                // extract the probability of an edge - find out what column name in cytoscape Mark needs is in
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-//        try (BufferedReader reader = Files.newBufferedReader(file, Charset.defaultCharset())) {
-//            Pattern space = Pattern.compile("\\s+");
-//            boolean isData = false;
-//            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
-//                line = line.trim();
-//                if (isData) {
-//                    String[] data = space.split(line, 2);
-//                    if (data.length == 2) {
-//                        String value = data[1].trim();
-//                        String[] edgeValues = space.split(value);
-//                        if (edgeValues.length == 3) {
-//                            CharSequence source = edgeValues[0].trim();
-//                            CharSequence target = edgeValues[2].trim();
-//                            CharSequence type = edgeValues[1].trim();
-//                            nodes.add(new Edge(source.toString(), target.toString(), type.toString()));
-//                        }
-//                    }
-//                } else if ("Graph Edges:".equals(line)) {
-//                    isData = true;
-//                }
-//            }
-//        } catch (IOException exception) {
-//            // TODO: use cytoscape logger
-//            System.err.println(String.format("Unable to read file '%s'. \n%s", fileName, exception));
-//        }
         return cytoEdges;
     }
 
