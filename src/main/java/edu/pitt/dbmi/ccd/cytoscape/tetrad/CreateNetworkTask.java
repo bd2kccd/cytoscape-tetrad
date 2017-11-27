@@ -1,5 +1,7 @@
 package edu.pitt.dbmi.ccd.cytoscape.tetrad;
 
+import edu.cmu.tetrad.graph.EdgeTypeProbability;
+import edu.cmu.tetrad.graph.Endpoint;
 import edu.cmu.tetrad.graph.Graph;
 import edu.cmu.tetrad.util.JsonUtils;
 import java.io.IOException;
@@ -64,19 +66,41 @@ public class CreateNetworkTask extends AbstractTask {
             // For each edge determine the types of endpoints to figure out edge type.
             // Basically convert to these '-->', 'o-o', or 'o->' strings
             for (edu.cmu.tetrad.graph.Edge tetradGraphEdge : tetradGraphEdges) {
-                // Produces a string representation of the edge
-                String edgeType = tetradGraphEdge.toString();
+                String edgeType = "";
+
+                Endpoint endpoint1 = tetradGraphEdge.getEndpoint1();
+                Endpoint endpoint2 = tetradGraphEdge.getEndpoint2();
+
+                String endpoint1Str = "";
+                if (endpoint1 == Endpoint.TAIL) {
+                    endpoint1Str = "-";
+                } else if (endpoint1 == Endpoint.ARROW) {
+                    endpoint1Str = "<";
+                } else if (endpoint1 == Endpoint.CIRCLE) {
+                    endpoint1Str = "o";
+                }
+
+                String endpoint2Str = "";
+                if (endpoint2 == Endpoint.TAIL) {
+                    endpoint2Str = "-";
+                } else if (endpoint2 == Endpoint.ARROW) {
+                    endpoint2Str = ">";
+                } else if (endpoint2 == Endpoint.CIRCLE) {
+                    endpoint2Str = "o";
+                }
+
+                // Produce a string representation of the edge
+                edgeType = endpoint1Str + "-" + endpoint2Str;
 
                 // Extract the probability of an edge - find out what column name in cytoscape Mark needs is in
                 // Will need to use the latest release of Tetrad to have this feature available
-                List<edu.cmu.tetrad.graph.EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
+                List<EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
 
-                // Create a new Edge(String source, String target, String type)
+                // Create a new Edge(String source, String target, String type, List<EdgeTypeProbability> edgeTypeProbabilities)
                 // This is the cyto edge object in this package, not the edu.cmu.tetrad.graph.Edge
-                Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType);
+                Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType, edgeTypeProbabilities);
                 // Add to the list
                 cytoEdges.add(cytoEdge);
-
             }
 
         } catch (IOException e) {
@@ -97,8 +121,7 @@ public class CreateNetworkTask extends AbstractTask {
         }
 
         CyNetwork myNet = cyNetworkFactory.createNetwork();
-        myNet.getRow(myNet).set(CyNetwork.NAME,
-                cyNetworkNaming.getSuggestedNetworkTitle(inputFileName));
+        myNet.getRow(myNet).set(CyNetwork.NAME, cyNetworkNaming.getSuggestedNetworkTitle(inputFileName));
 
         // create nodes
         Hashtable<String, CyNode> nodeNameNodeMap = new Hashtable<>();
@@ -116,6 +139,10 @@ public class CreateNetworkTask extends AbstractTask {
             CyRow myRow = edgeTable.getRow(myEdge.getSUID());
             myRow.set("interaction", edge.getType());
             myRow.set("name", edge.getSource() + " (" + edge.getType() + ") " + edge.getTarget());
+
+            // Specific to Mark's work, placeholder UUID
+            List<String> anno_set = Arrays.asList("11a6e1a3-da96-498f-8d79-1af6dab80158");
+            myRow.set("__CCD_Annotation_Set", anno_set);
         }
 
         cyNetworkManager.addNetwork(myNet);
