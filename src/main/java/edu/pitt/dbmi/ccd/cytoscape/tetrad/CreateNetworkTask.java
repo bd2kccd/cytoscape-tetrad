@@ -3,6 +3,7 @@ package edu.pitt.dbmi.ccd.cytoscape.tetrad;
 import edu.cmu.tetrad.graph.EdgeTypeProbability;
 import edu.cmu.tetrad.graph.Endpoint;
 import edu.cmu.tetrad.graph.Graph;
+import edu.cmu.tetrad.graph.Node;
 import edu.cmu.tetrad.util.JsonUtils;
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,6 +47,27 @@ public class CreateNetworkTask extends AbstractTask {
         this.loadVizmapFileTaskFactory = loadVizmapFileTaskFactory;
         this.visualMappingManager = visualMappingManager;
 
+    }
+
+    public List<Node> extractNodesFromFile(final String fileName) {
+        List<Node> cytoNodes = new LinkedList<>();
+
+        Path file = Paths.get(fileName);
+
+        try {
+            // Read Tetrad generated json file
+            String contents = new String(Files.readAllBytes(file));
+
+            // Parse to Tetrad graph
+            Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
+
+            // Extract the nodes
+            cytoNodes = graph.getNodes();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return cytoNodes;
     }
 
     public List<Edge> extractEdgesFromFile(final String fileName) {
@@ -111,28 +133,33 @@ public class CreateNetworkTask extends AbstractTask {
     }
 
     public void run(TaskMonitor monitor) {
-
+        List<Node> nodesFromFile = extractNodesFromFile(inputFileName);
         List<Edge> edgesFromFile = extractEdgesFromFile(inputFileName);
-
-        Set<String> inputNodes = new HashSet<>();
-        for (Edge edge : edgesFromFile) {
-            inputNodes.add(edge.getSource());
-            inputNodes.add(edge.getTarget());
-        }
 
         CyNetwork myNet = cyNetworkFactory.createNetwork();
         myNet.getRow(myNet).set(CyNetwork.NAME, cyNetworkNaming.getSuggestedNetworkTitle(inputFileName));
 
         // create nodes
         Hashtable<String, CyNode> nodeNameNodeMap = new Hashtable<>();
-        for (String nodeName : inputNodes) {
+        for (Node node : nodesFromFile) {
             CyNode myNode = myNet.addNode();
-            nodeNameNodeMap.put(nodeName, myNode);
-            myNet.getDefaultNodeTable().getRow(myNode.getSUID()).set("name", nodeName);
+            nodeNameNodeMap.put(node.getName(), myNode);
+
+            CyTable myNetTable = myNet.getDefaultNodeTable();
+            CyRow myNetTableRow = myNetTable.getRow(myNode.getSUID());
+
+            myNetTableRow.set("name", node.getName());
         }
+
+        // Update Network Table, change name and shared name values later
+        CyTable netTable = myNet.getDefaultNetworkTable();
 
         // create edges
         CyTable edgeTable = myNet.getDefaultEdgeTable();
+
+        // Create the "__CCD_Annotation_Set" column
+        edgeTable.createColumn("__CCD_Annotation_Set", String.class, true, "default value");
+
         for (Edge edge : edgesFromFile) {
             //String[] inputEdgeColumns = inputEdge.split(" ");
             CyEdge myEdge = myNet.addEdge(nodeNameNodeMap.get(edge.getSource()), nodeNameNodeMap.get(edge.getTarget()), true);
@@ -141,8 +168,7 @@ public class CreateNetworkTask extends AbstractTask {
             myRow.set("name", edge.getSource() + " (" + edge.getType() + ") " + edge.getTarget());
 
             // Specific to Mark's work, placeholder UUID
-            List<String> anno_set = Arrays.asList("11a6e1a3-da96-498f-8d79-1af6dab80158");
-            myRow.set("__CCD_Annotation_Set", anno_set);
+            myRow.set("__CCD_Annotation_Set", "new value");
         }
 
         cyNetworkManager.addNetwork(myNet);
