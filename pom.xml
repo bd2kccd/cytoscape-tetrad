@@ -9,7 +9,6 @@
     <packaging>bundle</packaging>
     <description>A Cytoscape 3 app for importing the Tetrad generated JSON output file as a Network.</description>
     
-    
     <properties>
         <bundle.namespace>edu.pitt.dbmi.ccd.cytoscape.tetrad</bundle.namespace>
         <bundle.symbolicName>edu.pitt.dbmi.ccd.CytoscapeTetradApp</bundle.symbolicName>
@@ -21,7 +20,6 @@
         <tetrad-lib.version>6.4.0-SNAPSHOT</tetrad-lib.version>
     </properties>
 
-
     <distributionManagement>
         <repository>
             <id>ccd-releases</id>
@@ -32,7 +30,6 @@
             <url>https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
 
     <repositories>
         <repository>
@@ -98,14 +95,19 @@
                         <Export-Package>!${bundle.namespace}.*</Export-Package>
                         <Private-Package>${bundle.namespace}.*</Private-Package>
                         <Bundle-Activator>${bundle.namespace}.CyActivator</Bundle-Activator>
+                        <!-- Embed dependencies (scope=!provided|test) -->
+                        <Embed-Dependency>*;scope=!provided|test</Embed-Dependency>
+                        <Embed-Transitive>true</Embed-Transitive>
+                        <Import-Package>*;resolution:=optional</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-
     <dependencies>
+        <!-- Set the scope to provided for all Cytoscape and OSGi API dependencies -->
+        <!-- So maven-bundle-plugin won't include these dependencies with the bundle jar. -->
         <dependency>
             <groupId>org.cytoscape</groupId>
             <artifactId>swing-application-api</artifactId>
@@ -136,6 +138,7 @@
             <version>${cytoscape.core-task-api.version}</version>
             <scope>provided</scope>
         </dependency>
+        <!-- This dependency has no <scope>provided</scope>, and will be embeded in bundle jar -->
         <dependency>
             <groupId>edu.cmu</groupId>
             <artifactId>tetrad-lib</artifactId>
