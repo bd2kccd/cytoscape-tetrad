@@ -2,6 +2,12 @@
 
 A Cytoscape 3 app for importing the Tetrad generated JSON output file as a Network.
 
+## Prerequisites - You must have the following tools installed to build/install this App
+
+* Oracle Java 1.8 - (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* Maven 3.x -(https://maven.apache.org/download.cgi)
+* Cytoscape 3.x - (http://www.cytoscape.org)
+
 ## Installing this App
 
 Clone and build this repo with Maven.
