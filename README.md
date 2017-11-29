@@ -2,7 +2,7 @@
 
 A Cytoscape 3 app for importing the Tetrad generated JSON output file as a Network.
 
-## Prerequisites - You must have the following tools installed to build/install this App
+## Prerequisites - Tools needed to build/install this App
 
 * Oracle Java 1.8 - (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Maven 3.x -(https://maven.apache.org/download.cgi)
@@ -25,3 +25,5 @@ To install this app within Cytoscape, go to the menu bar and choose **Apps** -> 
 This app currently does the following:
 
 Provides a new **File** -> **Import** -> **Network** -> **Tetrad** option that reads in a Tetrad .json output file, renders a network that utilizes a Cytoscape style that displays causal edges including those used in partial ancestral graphs.
+
+Once the network is imported, you can apply a preferred layout to view and analyze it.
