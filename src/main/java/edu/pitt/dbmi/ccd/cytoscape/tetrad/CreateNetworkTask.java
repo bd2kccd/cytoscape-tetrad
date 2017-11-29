@@ -12,7 +12,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 import org.cytoscape.model.*;
-import org.cytoscape.session.CyNetworkNaming;
 import org.cytoscape.task.read.LoadVizmapFileTaskFactory;
 import org.cytoscape.view.model.CyNetworkView;
 import org.cytoscape.view.model.CyNetworkViewFactory;
@@ -26,31 +25,28 @@ public class CreateNetworkTask extends AbstractTask {
 
     private final CyNetworkManager cyNetworkManager;
     private final CyNetworkFactory cyNetworkFactory;
-    private final CyNetworkNaming cyNetworkNaming;
     private final CyNetworkViewFactory cyNetworkViewFactory;
     private final CyNetworkViewManager cyNetworkViewManager;
     private final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory;
     private final VisualMappingManager visualMappingManager;
 
-    private String inputFileName;
+    private final String inputFileName;
 
-    public CreateNetworkTask(final CyNetworkManager netMgr, final CyNetworkNaming namingUtil, final CyNetworkFactory cnf,
+    public CreateNetworkTask(final CyNetworkManager netMgr, final CyNetworkFactory cnf,
             final CyNetworkViewManager cyNetworkViewManager, final CyNetworkViewFactory cyNetworkViewFactory,
             final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory, final VisualMappingManager visualMappingManager,
             String inputFileName) {
         this.cyNetworkManager = netMgr;
         this.cyNetworkFactory = cnf;
-        this.cyNetworkNaming = namingUtil;
         this.inputFileName = inputFileName;
         this.cyNetworkViewFactory = cyNetworkViewFactory;
         this.cyNetworkViewManager = cyNetworkViewManager;
         this.loadVizmapFileTaskFactory = loadVizmapFileTaskFactory;
         this.visualMappingManager = visualMappingManager;
-
     }
 
     public List<Node> extractNodesFromFile(final String fileName) {
-        List<Node> cytoNodes = new LinkedList<>();
+        List<Node> tetradGraphNodes = new LinkedList<>();
 
         Path file = Paths.get(fileName);
 
@@ -62,12 +58,12 @@ public class CreateNetworkTask extends AbstractTask {
             Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
 
             // Extract the nodes
-            cytoNodes = graph.getNodes();
+            tetradGraphNodes = graph.getNodes();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return cytoNodes;
+        return tetradGraphNodes;
     }
 
     public List<Edge> extractEdgesFromFile(final String fileName) {
@@ -82,14 +78,14 @@ public class CreateNetworkTask extends AbstractTask {
             // Parse to Tetrad graph
             Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
 
-            // Extract the edges
+            // Extract the edges, this is the tetrad graph edges.
+            // We'll convert them into cyto Edge
             Set<edu.cmu.tetrad.graph.Edge> tetradGraphEdges = graph.getEdges();
 
             // For each edge determine the types of endpoints to figure out edge type.
             // Basically convert to these '-->', 'o-o', or 'o->' strings
-            for (edu.cmu.tetrad.graph.Edge tetradGraphEdge : tetradGraphEdges) {
+            tetradGraphEdges.stream().map((tetradGraphEdge) -> {
                 String edgeType = "";
-
                 Endpoint endpoint1 = tetradGraphEdge.getEndpoint1();
                 Endpoint endpoint2 = tetradGraphEdge.getEndpoint2();
 
@@ -110,7 +106,6 @@ public class CreateNetworkTask extends AbstractTask {
                 } else if (endpoint2 == Endpoint.CIRCLE) {
                     endpoint2Str = "o";
                 }
-
                 // Produce a string representation of the edge
                 edgeType = endpoint1Str + "-" + endpoint2Str;
 
@@ -121,9 +116,12 @@ public class CreateNetworkTask extends AbstractTask {
                 // Create a new Edge(String source, String target, String type, List<EdgeTypeProbability> edgeTypeProbabilities)
                 // This is the cyto edge object in this package, not the edu.cmu.tetrad.graph.Edge
                 Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType, edgeTypeProbabilities);
+
+                return cytoEdge;
+            }).forEach((cytoEdge) -> {
                 // Add to the list
                 cytoEdges.add(cytoEdge);
-            }
+            });
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -132,53 +130,78 @@ public class CreateNetworkTask extends AbstractTask {
         return cytoEdges;
     }
 
+    @Override
     public void run(TaskMonitor monitor) {
-        List<Node> nodesFromFile = extractNodesFromFile(inputFileName);
-        List<Edge> edgesFromFile = extractEdgesFromFile(inputFileName);
+        List<Node> tetradGraphNodes = extractNodesFromFile(inputFileName);
+        List<Edge> cytoEdges = extractEdgesFromFile(inputFileName);
 
+        // Create the cytoscape network
         CyNetwork myNet = cyNetworkFactory.createNetwork();
-        myNet.getRow(myNet).set(CyNetwork.NAME, cyNetworkNaming.getSuggestedNetworkTitle(inputFileName));
 
-        // create nodes
-        Hashtable<String, CyNode> nodeNameNodeMap = new Hashtable<>();
-        for (Node node : nodesFromFile) {
+        // Set the name for network in Network Table
+        myNet.getRow(myNet).set(CyNetwork.NAME, "Tetrad Output Network");
+
+        // Add nodes
+        HashMap<String, CyNode> nodeName2CyNodeMap = new HashMap<>();
+
+        tetradGraphNodes.stream().forEach((tetradGraphNode) -> {
             CyNode myNode = myNet.addNode();
-            nodeNameNodeMap.put(node.getName(), myNode);
 
-            CyTable myNetTable = myNet.getDefaultNodeTable();
-            CyRow myNetTableRow = myNetTable.getRow(myNode.getSUID());
+            // Set name for new node
+            myNet.getRow(myNode).set(CyNetwork.NAME, tetradGraphNode.getName());
 
-            myNetTableRow.set("name", node.getName());
-        }
+            // Add to the map
+            nodeName2CyNodeMap.put(tetradGraphNode.getName(), myNode);
+        });
 
-        // Update Network Table, change name and shared name values later
-        CyTable netTable = myNet.getDefaultNetworkTable();
-
-        // create edges
-        CyTable edgeTable = myNet.getDefaultEdgeTable();
+        // Edge Table
+        CyTable myEdgeTable = myNet.getDefaultEdgeTable();
 
         // Create the "__CCD_Annotation_Set" column
-        edgeTable.createColumn("__CCD_Annotation_Set", String.class, true, "default value");
+        myEdgeTable.createColumn("__CCD_Annotation_Set", String.class, true);
 
-        for (Edge edge : edgesFromFile) {
-            //String[] inputEdgeColumns = inputEdge.split(" ");
-            CyEdge myEdge = myNet.addEdge(nodeNameNodeMap.get(edge.getSource()), nodeNameNodeMap.get(edge.getTarget()), true);
-            CyRow myRow = edgeTable.getRow(myEdge.getSUID());
+        // Add edges
+        cytoEdges.stream().forEach((edge) -> {
+            CyEdge myEdge = myNet.addEdge(nodeName2CyNodeMap.get(edge.getSource()), nodeName2CyNodeMap.get(edge.getTarget()), true);
+            CyRow myRow = myEdgeTable.getRow(myEdge.getSUID());
             myRow.set("interaction", edge.getType());
-            myRow.set("name", edge.getSource() + " (" + edge.getType() + ") " + edge.getTarget());
+            myRow.set(CyNetwork.NAME, edge.getSource() + " (" + edge.getType() + ") " + edge.getTarget());
 
-            // Specific to Mark's work, placeholder UUID
-            myRow.set("__CCD_Annotation_Set", "new value");
-        }
+            // Get edgeTypeProbabilities
+            List<EdgeTypeProbability> edgeTypeProbabilities = edge.getEdgeTypeProbabilities();
 
+            String maxEdgeTypeProbablityTypeAndValue = "";
+
+            // Find the max edge type probablity if generated by bootstraping
+            if (!edgeTypeProbabilities.isEmpty()) {
+                // Comparator
+                final Comparator<EdgeTypeProbability> comparator = (etp1, etp2) -> Double.compare(etp1.getProbability(), etp2.getProbability());
+
+                // Find the EdgeTypeProbability that has the max probablity value and EdgeType is not nil
+                EdgeTypeProbability maxEdgeTypeProbability = edgeTypeProbabilities.stream()
+                        .filter(edgeTypeProbability -> !edgeTypeProbability.getEdgeType().equals(EdgeTypeProbability.EdgeType.nil))
+                        .max(comparator)
+                        .get();
+
+                // Create the string of "edge type: probablity value"
+                maxEdgeTypeProbablityTypeAndValue = maxEdgeTypeProbability.getEdgeType().name() + ": " + maxEdgeTypeProbability.getProbability();
+            }
+
+            // Specific to Mark's work, placeholder
+            myRow.set("__CCD_Annotation_Set", maxEdgeTypeProbablityTypeAndValue);
+        });
+
+        // Add the network to Cytoscape
         cyNetworkManager.addNetwork(myNet);
 
-        // create the view
+        // Create a new network view
         CyNetworkView myView = cyNetworkViewFactory.createNetworkView(myNet);
+
+        // Add view to Cytoscape
         cyNetworkViewManager.addNetworkView(myView);
 
         // perform statistical analysis
-        // do organic layour
+        // do organic layout
         // use the tetrad style
         InputStream stream = getClass().getResourceAsStream("/tetrad.xml");
         if (stream != null) {
@@ -187,7 +210,6 @@ public class CreateNetworkTask extends AbstractTask {
             visualMappingManager.addVisualStyle(vs);
             vs.apply(myView);
             myView.updateView();
-
         } else {
             // TODO: log this properly
             System.err.println("Could not load style - null");

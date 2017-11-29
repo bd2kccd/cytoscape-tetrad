@@ -1,31 +1,25 @@
 package edu.pitt.dbmi.ccd.cytoscape.tetrad;
 
+import java.awt.event.ActionEvent;
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import org.cytoscape.application.swing.AbstractCyAction;
 import org.cytoscape.application.swing.CySwingApplication;
 import org.cytoscape.application.swing.CytoPanel;
 import org.cytoscape.application.swing.CytoPanelName;
-import org.cytoscape.task.read.LoadVizmapFileTaskFactory;
 import org.cytoscape.work.swing.DialogTaskManager;
-
-import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import java.awt.event.ActionEvent;
-
 
 public class ImportTetradFileAction extends AbstractCyAction {
 
-
-   	private final DialogTaskManager dialogTaskManager;
+    private final DialogTaskManager dialogTaskManager;
 
     private final CreateNetworkTaskFactory createNetworkTaskFactory;
-
 
     private static final long serialVersionUID = 1L;
     private CySwingApplication desktopApp;
     private final CytoPanel cytoPanelWest;
 
-    public ImportTetradFileAction(CySwingApplication desktopApp, final DialogTaskManager dialogTaskManager, final CreateNetworkTaskFactory createNetworkTaskFactory)
-    {
+    public ImportTetradFileAction(CySwingApplication desktopApp, final DialogTaskManager dialogTaskManager, final CreateNetworkTaskFactory createNetworkTaskFactory) {
 
         super("Tetrad");
 
@@ -39,12 +33,10 @@ public class ImportTetradFileAction extends AbstractCyAction {
 
         this.createNetworkTaskFactory = createNetworkTaskFactory;
 
-
-
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
-
 
         JFileChooser chooser = new JFileChooser();
 
@@ -54,15 +46,13 @@ public class ImportTetradFileAction extends AbstractCyAction {
 
         int returnVal = chooser.showOpenDialog(cytoPanelWest.getComponentAt(0));
         if (returnVal == JFileChooser.APPROVE_OPTION) {
-            System.out.println("You chose to open this file: " +
-                    chooser.getSelectedFile().getName());
+            System.out.println("You chose to open this file: "
+                    + chooser.getSelectedFile().getName());
         }
 
         createNetworkTaskFactory.setInputFileName(chooser.getSelectedFile().getAbsolutePath());
 
         dialogTaskManager.execute(createNetworkTaskFactory.createTaskIterator());
-
-
 
     }
 
