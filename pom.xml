@@ -10,9 +10,11 @@
     <description>A Cytoscape 3 app for importing the Tetrad generated JSON output file as a Network.</description>
     
     <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bundle.namespace>edu.pitt.dbmi.ccd.cytoscape.tetrad</bundle.namespace>
         <bundle.symbolicName>edu.pitt.dbmi.ccd.CytoscapeTetradApp</bundle.symbolicName>
-        <cytoscape.api.version>3.3.0</cytoscape.api.version>
+        <cytoscape.api.version>3.5.0</cytoscape.api.version>
         <osgi.api.version>4.2.0</osgi.api.version>
         <cytoscape.core-task-api.version>3.0.0</cytoscape.core-task-api.version>
         <maven-bundle-plugin.version>2.5.4</maven-bundle-plugin.version>
@@ -72,9 +74,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <optimize>true</optimize>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
