@@ -122,7 +122,9 @@ public class CreateNetworkTask extends AbstractTask {
     public void run(TaskMonitor monitor) {
         Graph tetradGraph = extractTetradGraphFromFile(inputFileName);
 
+        // Get nodes from tetrad graph directly
         List<Node> tetradGraphNodes = tetradGraph.getNodes();
+        // Need to convert the tetrad edges into cyto edge that can be used later
         List<Edge> cytoEdges = extractEdgesFromTetradGraph(tetradGraph);
 
         // Create the cytoscape network
@@ -131,14 +133,25 @@ public class CreateNetworkTask extends AbstractTask {
         // Set the name for network in Network Table
         myNet.getRow(myNet).set(CyNetwork.NAME, "Tetrad Output Network");
 
+        // Node Table
+        CyTable myNodeTable = myNet.getDefaultNodeTable();
+
+        // Create the "__CCD_Annotation_Set" column in Node Table
+        myNodeTable.createColumn("__CCD_Annotation_Set", String.class, true);
+
         // Add nodes
         HashMap<String, CyNode> nodeName2CyNodeMap = new HashMap<>();
 
-        tetradGraphNodes.stream().forEach((tetradGraphNode) -> {
+        tetradGraphNodes.stream().forEach((Node tetradGraphNode) -> {
             CyNode myNode = myNet.addNode();
 
+            CyRow myRow = myNodeTable.getRow(myNode.getSUID());
+
             // Set name for new node
-            myNet.getRow(myNode).set(CyNetwork.NAME, tetradGraphNode.getName());
+            myRow.set(CyNetwork.NAME, tetradGraphNode.getName());
+
+            // Specific to Mark's work, empty list now
+            myRow.set("__CCD_Annotation_Set", "[]");
 
             // Add to the map
             nodeName2CyNodeMap.put(tetradGraphNode.getName(), myNode);
@@ -147,14 +160,16 @@ public class CreateNetworkTask extends AbstractTask {
         // Edge Table
         CyTable myEdgeTable = myNet.getDefaultEdgeTable();
 
-        // Create the "__CCD_Annotation_Set" column
+        // Create the "__CCD_Annotation_Set" column in Edge Table
         myEdgeTable.createColumn("__CCD_Annotation_Set", String.class, true);
+        // Create the "__CCD_Extended_Attribute_Values" column in Edge Table
+        myEdgeTable.createColumn("__CCD_Extended_Attribute_Values", String.class, true);
 
         // Add edges
         cytoEdges.stream().forEach((edge) -> {
             CyEdge myEdge = myNet.addEdge(nodeName2CyNodeMap.get(edge.getSource()), nodeName2CyNodeMap.get(edge.getTarget()), true);
             CyRow myRow = myEdgeTable.getRow(myEdge.getSUID());
-            myRow.set("interaction", edge.getType());
+            myRow.set(CyEdge.INTERACTION, edge.getType());
             myRow.set(CyNetwork.NAME, edge.getSource() + " (" + edge.getType() + ") " + edge.getTarget());
 
             // Get edgeTypeProbabilities
@@ -173,12 +188,14 @@ public class CreateNetworkTask extends AbstractTask {
                         .max(comparator)
                         .get();
 
+                // Create annotations
                 // Create the string of "edge type: probablity value"
                 maxEdgeTypeProbablityTypeAndValue = maxEdgeTypeProbability.getEdgeType().name() + ": " + maxEdgeTypeProbability.getProbability();
             }
 
             // Specific to Mark's work, placeholder
             myRow.set("__CCD_Annotation_Set", maxEdgeTypeProbablityTypeAndValue);
+            myRow.set("__CCD_Extended_Attribute_Values", maxEdgeTypeProbablityTypeAndValue);
         });
 
         // Add the network to Cytoscape
