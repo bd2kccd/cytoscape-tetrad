@@ -1,0 +1,61 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.5.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Network",
+    "name" : "Network",
+    "SUID" : 52,
+    "__CCD_Extended_Attributes" : [ "id=1|name=comment|type=string|description=A comment or remark", "id=2|name=posterior probability|type=float|description=Posterior probability bootstrap", "id=3|name=edge type|type=string|description=Type of edge", "id=4|name=edge type probability|type=float|description=Probability of certainty for edge type" ],
+    "__CCD_Annotations" : [ "1c5cf4df-89ab-432d-af7c-204053f27b3a", "c6d31c2a-4d1f-4d71-a3e4-31f16a602b6a" ],
+    "__Annotations" : [ "canvas=foreground|fontFamily=Arial|color=-16777216|x=-138.5|y=-25.0|zoom=1.0|z=0|fontSize=12|text=ta|type=org.cytoscape.view.presentation.annotations.TextAnnotation|fontStyle=0|uuid=1c5cf4df-89ab-432d-af7c-204053f27b3a", "canvas=foreground|fontFamily=Arial|color=-16777216|x=-94.5|y=-23.0|zoom=1.0|z=1|fontSize=12|text=0.8|type=org.cytoscape.view.presentation.annotations.TextAnnotation|fontStyle=0|uuid=c6d31c2a-4d1f-4d71-a3e4-31f16a602b6a" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "66",
+        "shared_name" : "X2",
+        "name" : "X2",
+        "SUID" : 66,
+        "__CCD_Annotation_Set" : [ ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 7.0,
+        "y" : -28.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "64",
+        "shared_name" : "X1",
+        "name" : "X1",
+        "SUID" : 64,
+        "__CCD_Annotation_Set" : [ ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -232.0,
+        "y" : -30.0
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "72",
+        "source" : "64",
+        "target" : "66",
+        "shared_name" : "X1 (interacts with) X2",
+        "shared_interaction" : "interacts with",
+        "name" : "X1 (interacts with) X2",
+        "interaction" : "interacts with",
+        "SUID" : 72,
+        "__CCD_Annotation_Set" : [ "1c5cf4df-89ab-432d-af7c-204053f27b3a", "c6d31c2a-4d1f-4d71-a3e4-31f16a602b6a" ],
+        "__CCD_Extended_Attribute_Values" : [ "ccdAnnoId=1c5cf4df-89ab-432d-af7c-204053f27b3a|ccdExtAttrId=3|value=ta", "ccdAnnoId=c6d31c2a-4d1f-4d71-a3e4-31f16a602b6a|ccdExtAttrId=4|value=0.8" ],
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}

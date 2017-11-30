@@ -32,21 +32,25 @@ public class CreateNetworkTask extends AbstractTask {
 
     private final String inputFileName;
 
-    public CreateNetworkTask(final CyNetworkManager netMgr, final CyNetworkFactory cnf,
-            final CyNetworkViewManager cyNetworkViewManager, final CyNetworkViewFactory cyNetworkViewFactory,
-            final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory, final VisualMappingManager visualMappingManager,
-            String inputFileName) {
+    public CreateNetworkTask(final CyNetworkManager netMgr,
+            final CyNetworkFactory netFactory,
+            final CyNetworkViewManager netViewMgr,
+            final CyNetworkViewFactory netViewFactory,
+            final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory,
+            final VisualMappingManager vizMappingMgr,
+            String fileName) {
+
         this.cyNetworkManager = netMgr;
-        this.cyNetworkFactory = cnf;
-        this.inputFileName = inputFileName;
-        this.cyNetworkViewFactory = cyNetworkViewFactory;
-        this.cyNetworkViewManager = cyNetworkViewManager;
+        this.cyNetworkFactory = netFactory;
+        this.cyNetworkViewManager = netViewMgr;
+        this.cyNetworkViewFactory = netViewFactory;
         this.loadVizmapFileTaskFactory = loadVizmapFileTaskFactory;
-        this.visualMappingManager = visualMappingManager;
+        this.visualMappingManager = vizMappingMgr;
+        this.inputFileName = fileName;
     }
 
-    public List<Node> extractNodesFromFile(final String fileName) {
-        List<Node> tetradGraphNodes = new LinkedList<>();
+    public Graph extractTetradGraphFromFile(final String fileName) {
+        Graph tetradGraph = null;
 
         Path file = Paths.get(fileName);
 
@@ -55,85 +59,71 @@ public class CreateNetworkTask extends AbstractTask {
             String contents = new String(Files.readAllBytes(file));
 
             // Parse to Tetrad graph
-            Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
-
-            // Extract the nodes
-            tetradGraphNodes = graph.getNodes();
+            tetradGraph = JsonUtils.parseJSONObjectToTetradGraph(contents);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return tetradGraphNodes;
+        return tetradGraph;
     }
 
-    public List<Edge> extractEdgesFromFile(final String fileName) {
+    public List<Edge> extractEdgesFromTetradGraph(Graph tetradGraph) {
         List<Edge> cytoEdges = new LinkedList<>();
 
-        Path file = Paths.get(fileName);
+        // Extract the edges, this is the tetrad graph edges.
+        // We'll convert them into cyto Edge
+        Set<edu.cmu.tetrad.graph.Edge> tetradGraphEdges = tetradGraph.getEdges();
 
-        try {
-            // Read Tetrad generated json file
-            String contents = new String(Files.readAllBytes(file));
+        // For each edge determine the types of endpoints to figure out edge type.
+        // Basically convert to these '-->', 'o-o', or 'o->' strings
+        tetradGraphEdges.stream().map((tetradGraphEdge) -> {
+            String edgeType = "";
+            Endpoint endpoint1 = tetradGraphEdge.getEndpoint1();
+            Endpoint endpoint2 = tetradGraphEdge.getEndpoint2();
 
-            // Parse to Tetrad graph
-            Graph graph = JsonUtils.parseJSONObjectToTetradGraph(contents);
+            String endpoint1Str = "";
+            if (endpoint1 == Endpoint.TAIL) {
+                endpoint1Str = "-";
+            } else if (endpoint1 == Endpoint.ARROW) {
+                endpoint1Str = "<";
+            } else if (endpoint1 == Endpoint.CIRCLE) {
+                endpoint1Str = "o";
+            }
 
-            // Extract the edges, this is the tetrad graph edges.
-            // We'll convert them into cyto Edge
-            Set<edu.cmu.tetrad.graph.Edge> tetradGraphEdges = graph.getEdges();
+            String endpoint2Str = "";
+            if (endpoint2 == Endpoint.TAIL) {
+                endpoint2Str = "-";
+            } else if (endpoint2 == Endpoint.ARROW) {
+                endpoint2Str = ">";
+            } else if (endpoint2 == Endpoint.CIRCLE) {
+                endpoint2Str = "o";
+            }
+            // Produce a string representation of the edge
+            edgeType = endpoint1Str + "-" + endpoint2Str;
 
-            // For each edge determine the types of endpoints to figure out edge type.
-            // Basically convert to these '-->', 'o-o', or 'o->' strings
-            tetradGraphEdges.stream().map((tetradGraphEdge) -> {
-                String edgeType = "";
-                Endpoint endpoint1 = tetradGraphEdge.getEndpoint1();
-                Endpoint endpoint2 = tetradGraphEdge.getEndpoint2();
+            // Extract the probability of an edge - find out what column name in cytoscape Mark needs is in
+            // Will need to use the latest release of Tetrad to have this feature available
+            List<EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
 
-                String endpoint1Str = "";
-                if (endpoint1 == Endpoint.TAIL) {
-                    endpoint1Str = "-";
-                } else if (endpoint1 == Endpoint.ARROW) {
-                    endpoint1Str = "<";
-                } else if (endpoint1 == Endpoint.CIRCLE) {
-                    endpoint1Str = "o";
-                }
+            // Create a new Edge(String source, String target, String type, List<EdgeTypeProbability> edgeTypeProbabilities)
+            // This is the cyto edge object in this package, not the edu.cmu.tetrad.graph.Edge
+            Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType, edgeTypeProbabilities);
 
-                String endpoint2Str = "";
-                if (endpoint2 == Endpoint.TAIL) {
-                    endpoint2Str = "-";
-                } else if (endpoint2 == Endpoint.ARROW) {
-                    endpoint2Str = ">";
-                } else if (endpoint2 == Endpoint.CIRCLE) {
-                    endpoint2Str = "o";
-                }
-                // Produce a string representation of the edge
-                edgeType = endpoint1Str + "-" + endpoint2Str;
-
-                // Extract the probability of an edge - find out what column name in cytoscape Mark needs is in
-                // Will need to use the latest release of Tetrad to have this feature available
-                List<EdgeTypeProbability> edgeTypeProbabilities = tetradGraphEdge.getEdgeTypeProbabilities();
-
-                // Create a new Edge(String source, String target, String type, List<EdgeTypeProbability> edgeTypeProbabilities)
-                // This is the cyto edge object in this package, not the edu.cmu.tetrad.graph.Edge
-                Edge cytoEdge = new Edge(tetradGraphEdge.getNode1().getName(), tetradGraphEdge.getNode2().getName(), edgeType, edgeTypeProbabilities);
-
-                return cytoEdge;
-            }).forEach((cytoEdge) -> {
-                // Add to the list
-                cytoEdges.add(cytoEdge);
-            });
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            return cytoEdge;
+        }).forEach((cytoEdge) -> {
+            // Add to the list
+            cytoEdges.add(cytoEdge);
+        });
 
         return cytoEdges;
     }
 
     @Override
     public void run(TaskMonitor monitor) {
-        List<Node> tetradGraphNodes = extractNodesFromFile(inputFileName);
-        List<Edge> cytoEdges = extractEdgesFromFile(inputFileName);
+        Graph tetradGraph = extractTetradGraphFromFile(inputFileName);
+
+        List<Node> tetradGraphNodes = tetradGraph.getNodes();
+        List<Edge> cytoEdges = extractEdgesFromTetradGraph(tetradGraph);
 
         // Create the cytoscape network
         CyNetwork myNet = cyNetworkFactory.createNetwork();

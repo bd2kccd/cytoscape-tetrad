@@ -37,9 +37,11 @@ public class CyActivator extends AbstractCyActivator {
 
         CreateNetworkTaskFactory createNetworkTaskFactory = new CreateNetworkTaskFactory(cyNetworkManagerServiceRef,
                 cyNetworkFactoryServiceRef, cyNetworkViewFactory, cyNetworkViewManager, loadVizmapFileTaskFactory, visualMappingManager);
+
         registerService(bc, createNetworkTaskFactory, TaskFactory.class, new Properties());
 
         ImportTetradFileAction importTetradFileAction = new ImportTetradFileAction(cytoscapeDesktopService, dialogTaskManager, createNetworkTaskFactory);
+
         registerService(bc, importTetradFileAction, CyAction.class, new Properties());
 
     }

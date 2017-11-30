@@ -36,11 +36,17 @@ public class CreateNetworkTaskFactory extends AbstractTaskFactory {
 
     public void setInputFileName(String inputFileName) {
         this.inputFileName = inputFileName;
-
     }
 
+    @Override
     public TaskIterator createTaskIterator() {
-        return new TaskIterator(new CreateNetworkTask(cyNetworkManager, cyNetworkFactory, cyNetworkViewManager,
-                cyNetworkViewFactory, loadVizmapFileTaskFactory, visualMappingManager, inputFileName));
+        return new TaskIterator(new CreateNetworkTask(cyNetworkManager,
+                cyNetworkFactory,
+                cyNetworkViewManager,
+                cyNetworkViewFactory,
+                loadVizmapFileTaskFactory,
+                visualMappingManager,
+                inputFileName
+        ));
     }
 }
