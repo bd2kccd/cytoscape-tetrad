@@ -16,7 +16,6 @@
         <bundle.symbolicName>edu.pitt.dbmi.ccd.CytoscapeTetradApp</bundle.symbolicName>
         <cytoscape.api.version>3.5.0</cytoscape.api.version>
         <osgi.api.version>4.2.0</osgi.api.version>
-        <cytoscape.core-task-api.version>3.0.0</cytoscape.core-task-api.version>
         <maven-bundle-plugin.version>2.5.4</maven-bundle-plugin.version>
         <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
         <tetrad-lib.version>6.4.0-SNAPSHOT</tetrad-lib.version>
@@ -137,7 +136,7 @@
         <dependency>
             <groupId>org.cytoscape</groupId>
             <artifactId>core-task-api</artifactId>
-            <version>${cytoscape.core-task-api.version}</version>
+            <version>${cytoscape.api.version}</version>
             <scope>provided</scope>
         </dependency>
         <!-- This dependency has no <scope>provided</scope>, and will be embeded in bundle jar -->
