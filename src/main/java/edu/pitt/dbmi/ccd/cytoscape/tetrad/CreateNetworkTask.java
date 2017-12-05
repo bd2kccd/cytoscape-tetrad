@@ -34,6 +34,7 @@ public class CreateNetworkTask extends AbstractTask {
 
     private final String inputFileName;
 
+    private static final String NETWORK_NAME = "Tetrad Output Network";
     private static final String CCD_ANNOTATIONS = "__CCD_Annotations";
     private static final String CCD_ANNOTATION_SET = "__CCD_Annotation_Set";
 
@@ -140,7 +141,7 @@ public class CreateNetworkTask extends AbstractTask {
         CyTable myNetTable = myNet.getDefaultNetworkTable();
 
         // Set the name for network in Network Table
-        myNet.getRow(myNet).set(CyNetwork.NAME, "Tetrad Output Network");
+        myNet.getRow(myNet).set(CyNetwork.NAME, NETWORK_NAME);
 
         // Create "__CCD_Annotaions" column in Network Table
         myNetTable.createListColumn(CCD_ANNOTATIONS, String.class, true);
