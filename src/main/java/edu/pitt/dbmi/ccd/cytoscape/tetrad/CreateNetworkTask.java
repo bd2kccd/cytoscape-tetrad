@@ -18,9 +18,6 @@ import org.cytoscape.task.read.LoadVizmapFileTaskFactory;
 import org.cytoscape.view.model.CyNetworkView;
 import org.cytoscape.view.model.CyNetworkViewFactory;
 import org.cytoscape.view.model.CyNetworkViewManager;
-import org.cytoscape.view.presentation.annotations.AnnotationFactory;
-import org.cytoscape.view.presentation.annotations.AnnotationManager;
-import org.cytoscape.view.presentation.annotations.TextAnnotation;
 import org.cytoscape.view.vizmap.VisualMappingManager;
 import org.cytoscape.view.vizmap.VisualStyle;
 import org.cytoscape.work.AbstractTask;
@@ -34,16 +31,11 @@ public class CreateNetworkTask extends AbstractTask {
     private final CyNetworkViewManager cyNetworkViewManager;
     private final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory;
     private final VisualMappingManager visualMappingManager;
-    private final AnnotationFactory<TextAnnotation> textAnnotationFactory;
-    private final AnnotationManager annotationManager;
 
     private final String inputFileName;
 
-    private static final String ANNOTATIONS = "__Annotations";
     private static final String CCD_ANNOTATIONS = "__CCD_Annotations";
     private static final String CCD_ANNOTATION_SET = "__CCD_Annotation_Set";
-    private static final String CCD_EXTENDED_ATTRIBUTES = "__CCD_Extended_Attributes";
-    private static final String CCD_EXTENDED_ATTRIBUTES_VALUES = "__CCD_Extended_Attribute_Values";
 
     public CreateNetworkTask(final CyApplicationManager appMgr,
             final CyNetworkManager netMgr,
@@ -52,8 +44,6 @@ public class CreateNetworkTask extends AbstractTask {
             final CyNetworkViewFactory netViewFactory,
             final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory,
             final VisualMappingManager vizMappingMgr,
-            final AnnotationFactory textAnnoFactory,
-            final AnnotationManager annoMgr,
             String fileName) {
 
         this.cyNetworkManager = netMgr;
@@ -62,8 +52,6 @@ public class CreateNetworkTask extends AbstractTask {
         this.cyNetworkViewFactory = netViewFactory;
         this.loadVizmapFileTaskFactory = loadVizmapFileTaskFactory;
         this.visualMappingManager = vizMappingMgr;
-        this.textAnnotationFactory = textAnnoFactory;
-        this.annotationManager = annoMgr;
         this.inputFileName = fileName;
     }
 
@@ -150,18 +138,14 @@ public class CreateNetworkTask extends AbstractTask {
 
         CyTable myNetTable = myNet.getDefaultNetworkTable();
 
-        // Create CCD annotaion columns in Network Table
-        myNetTable.createListColumn(ANNOTATIONS, String.class, true);
+        // Create CCD annotaions column in Network Table
         myNetTable.createListColumn(CCD_ANNOTATIONS, String.class, true);
-        myNetTable.createListColumn(CCD_EXTENDED_ATTRIBUTES, String.class, true);
 
         // Set the name for network in Network Table
         myNet.getRow(myNet).set(CyNetwork.NAME, "Tetrad Output Network");
 
-        // Column lists
-        List<String> __Annotations = new LinkedList<>();
+        // Column list
         List<String> __CCD_Annotations = new LinkedList<>();
-        List<String> __CCD_Extended_Attributes = new LinkedList<>();
 
         // Node Table
         CyTable myNodeTable = myNet.getDefaultNodeTable();
@@ -191,11 +175,12 @@ public class CreateNetworkTask extends AbstractTask {
 
         // Create the "__CCD_Annotation_Set" column in Edge Table
         myEdgeTable.createListColumn(CCD_ANNOTATION_SET, String.class, true);
-        // Create the "__CCD_Extended_Attribute_Values" column in Edge Table
-        myEdgeTable.createListColumn(CCD_EXTENDED_ATTRIBUTES_VALUES, String.class, true);
 
         // Add edges
         cytoEdges.stream().forEach((Edge edge) -> {
+            // Column list
+            List<String> __CCD_Annotation_Set = new LinkedList<>();
+
             CyEdge myEdge = myNet.addEdge(nodeName2CyNodeMap.get(edge.getSource()), nodeName2CyNodeMap.get(edge.getTarget()), true);
             CyRow myRow = myEdgeTable.getRow(myEdge.getSUID());
             myRow.set(CyEdge.INTERACTION, edge.getType());
@@ -220,20 +205,15 @@ public class CreateNetworkTask extends AbstractTask {
             }
 
             // Annotation on edge type
-            Map<String, String> edgeTypeAnnoArgs = new HashMap<>();
-            // Fields inherited from interface org.cytoscape.view.presentation.annotations.Annotation
-            // BACKGROUND, CANVAS, FOREGROUND, X, Y, Z, ZOOM
-            edgeTypeAnnoArgs.put("FONTFAMILY", "Arial");
-            edgeTypeAnnoArgs.put("COLOR", String.valueOf(-16777216));
-            edgeTypeAnnoArgs.put("TEXT", maxEdgeTypeProbability.getEdgeType().name());
-            edgeTypeAnnoArgs.put("UUID", UUID.randomUUID().toString());
+            // Use LinkedHashMap to keeps the keys in the order they were inserted
+            Map<String, String> edgeTypeAnnoArgs = new LinkedHashMap<>();
+            // A unique identifier for the annotation (separate from the Cytoscape generated annotation uuid)
+            String a_id = UUID.randomUUID().toString();
 
-            // Annotation on edge type probablility
-            Map<String, String> edgeTypeProbablityAnnoArgs = new HashMap<>();
-            edgeTypeProbablityAnnoArgs.put("FONTFAMILY", "Arial");
-            edgeTypeProbablityAnnoArgs.put("COLOR", String.valueOf(-16777216));
-            edgeTypeProbablityAnnoArgs.put("TEXT", Double.toString(maxEdgeTypeProbability.getProbability()));
-            edgeTypeProbablityAnnoArgs.put("UUID", UUID.randomUUID().toString());
+            edgeTypeAnnoArgs.put("uuid", a_id);
+            edgeTypeAnnoArgs.put("name", maxEdgeTypeProbability.getEdgeType().name());
+            edgeTypeAnnoArgs.put("type", "string");
+            edgeTypeAnnoArgs.put("description", "edge type");
 
             // Convert args into "key1=val1|key2=val2" string format
             String formattedEdgeTypeAnnoArgs = edgeTypeAnnoArgs.entrySet()
@@ -241,34 +221,29 @@ public class CreateNetworkTask extends AbstractTask {
                     .map(e -> e.getKey() + "=" + e.getValue())
                     .collect(joining("|"));
 
-            String formattedEdgeTypeProbablityAnnoArgs = edgeTypeProbablityAnnoArgs.entrySet()
+            // __CCD_Annotation_Set
+            Map<String, String> annoSetArgs = new LinkedHashMap<>();
+            annoSetArgs.put("a_id", a_id);
+            annoSetArgs.put("cy_id", "");
+            annoSetArgs.put("value", Double.toString(maxEdgeTypeProbability.getProbability()));
+
+            // Convert args into "key1=val1|key2=val2" string format
+            String formattedAnnoSetArgs = annoSetArgs.entrySet()
                     .stream()
                     .map(e -> e.getKey() + "=" + e.getValue())
                     .collect(joining("|"));
 
-            System.out.println("formattedEdgeTypeAnnoArgs: " + formattedEdgeTypeAnnoArgs);
-            System.out.println("formattedEdgeTypeProbablityAnnoArgs: " + formattedEdgeTypeProbablityAnnoArgs);
+            // Specific to Mark's work
+            // Bar separated values to be put into the "__CCD_Annotations" column in Network Table
+            __CCD_Annotations.add(formattedEdgeTypeAnnoArgs);
 
-            myRow.set(CCD_ANNOTATION_SET, new LinkedList<>());
-            myRow.set(CCD_EXTENDED_ATTRIBUTES_VALUES, new LinkedList<>());
-
-            // Specific to Mark's work, bar separated values
-            __Annotations.add(formattedEdgeTypeAnnoArgs);
-            __Annotations.add(formattedEdgeTypeProbablityAnnoArgs);
-
-            // Add UUID of edgeTypeAnno and edgeTypeProbablityAnno
-            __CCD_Annotations.add(edgeTypeAnnoArgs.get("UUID"));
-            __CCD_Annotations.add(edgeTypeProbablityAnnoArgs.get("UUID"));
-
-            // Pending, placeholders with dummy data
-            __CCD_Extended_Attributes.add("id=1|name=edge type|type=string|description=Type of edge");
-            __CCD_Extended_Attributes.add("id=2|name=edge type probability|type=float|description=Probability of certainty for edge type");
+            // Add to "__CCD_Annotation_Set" column in Edge Table
+            __CCD_Annotation_Set.add(formattedAnnoSetArgs);
+            myRow.set(CCD_ANNOTATION_SET, __CCD_Annotation_Set);
         });
 
         // Add all value specified columns in Network Table
-        myNet.getRow(myNet).set(ANNOTATIONS, __Annotations);
         myNet.getRow(myNet).set(CCD_ANNOTATIONS, __CCD_Annotations);
-        myNet.getRow(myNet).set(CCD_EXTENDED_ATTRIBUTES, __CCD_Extended_Attributes);
 
         // Add the network to Cytoscape
         cyNetworkManager.addNetwork(myNet);

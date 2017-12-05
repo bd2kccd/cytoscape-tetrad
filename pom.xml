@@ -117,12 +117,6 @@
         </dependency>
         <dependency>
             <groupId>org.cytoscape</groupId>
-            <artifactId>model-api</artifactId>
-            <version>${cytoscape.api.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.cytoscape</groupId>
             <artifactId>work-api</artifactId>
             <version>${cytoscape.api.version}</version>
             <scope>provided</scope>
@@ -148,12 +142,6 @@
         <dependency>
             <groupId>org.cytoscape</groupId>
             <artifactId>viewmodel-api</artifactId>
-            <version>${cytoscape.api.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.cytoscape</groupId>
-            <artifactId>presentation-api</artifactId>
             <version>${cytoscape.api.version}</version>
             <scope>provided</scope>
         </dependency>

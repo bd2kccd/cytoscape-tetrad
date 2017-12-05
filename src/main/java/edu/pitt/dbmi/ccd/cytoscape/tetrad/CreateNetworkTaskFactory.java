@@ -6,9 +6,6 @@ import org.cytoscape.model.CyNetworkManager;
 import org.cytoscape.task.read.LoadVizmapFileTaskFactory;
 import org.cytoscape.view.model.CyNetworkViewFactory;
 import org.cytoscape.view.model.CyNetworkViewManager;
-import org.cytoscape.view.presentation.annotations.AnnotationFactory;
-import org.cytoscape.view.presentation.annotations.AnnotationManager;
-import org.cytoscape.view.presentation.annotations.TextAnnotation;
 import org.cytoscape.view.vizmap.VisualMappingManager;
 import org.cytoscape.work.AbstractTaskFactory;
 import org.cytoscape.work.TaskIterator;
@@ -22,8 +19,6 @@ public class CreateNetworkTaskFactory extends AbstractTaskFactory {
     private final CyNetworkViewManager cyNetworkViewManager;
     private final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory;
     private final VisualMappingManager visualMappingManager;
-    private final AnnotationFactory<TextAnnotation> textAnnotationFactory;
-    private final AnnotationManager annotationManager;
     private String inputFileName;
 
     public CreateNetworkTaskFactory(final CyApplicationManager cyApplicationManager,
@@ -32,9 +27,7 @@ public class CreateNetworkTaskFactory extends AbstractTaskFactory {
             final CyNetworkViewFactory cyNetworkViewFactory,
             final CyNetworkViewManager cyNetworkViewManager,
             final LoadVizmapFileTaskFactory loadVizmapFileTaskFactory,
-            final VisualMappingManager visualMappingManager,
-            final AnnotationFactory textAnnotationFactory,
-            final AnnotationManager annotationManager) {
+            final VisualMappingManager visualMappingManager) {
 
         this.cyApplicationManager = cyApplicationManager;
         this.cyNetworkManager = cyNetworkManager;
@@ -43,8 +36,6 @@ public class CreateNetworkTaskFactory extends AbstractTaskFactory {
         this.cyNetworkViewManager = cyNetworkViewManager;
         this.loadVizmapFileTaskFactory = loadVizmapFileTaskFactory;
         this.visualMappingManager = visualMappingManager;
-        this.textAnnotationFactory = textAnnotationFactory;
-        this.annotationManager = annotationManager;
     }
 
     public void setInputFileName(String inputFileName) {
@@ -60,8 +51,6 @@ public class CreateNetworkTaskFactory extends AbstractTaskFactory {
                 cyNetworkViewFactory,
                 loadVizmapFileTaskFactory,
                 visualMappingManager,
-                textAnnotationFactory,
-                annotationManager,
                 inputFileName
         ));
     }

@@ -10,9 +10,6 @@ import org.cytoscape.service.util.AbstractCyActivator;
 import org.cytoscape.task.read.LoadVizmapFileTaskFactory;
 import org.cytoscape.view.model.CyNetworkViewFactory;
 import org.cytoscape.view.model.CyNetworkViewManager;
-import org.cytoscape.view.presentation.annotations.AnnotationFactory;
-import org.cytoscape.view.presentation.annotations.AnnotationManager;
-import org.cytoscape.view.presentation.annotations.TextAnnotation;
 import org.cytoscape.view.vizmap.VisualMappingManager;
 import org.cytoscape.work.TaskFactory;
 import org.cytoscape.work.swing.DialogTaskManager;
@@ -44,10 +41,6 @@ public class CyActivator extends AbstractCyActivator {
         LoadVizmapFileTaskFactory loadVizmapFileTaskFactory = getService(bc, LoadVizmapFileTaskFactory.class);
         VisualMappingManager visualMappingManager = getService(bc, VisualMappingManager.class);
 
-        AnnotationFactory<TextAnnotation> textAnnotationFactory = getService(bc, AnnotationFactory.class, "(type=TextAnnotation.class)");
-
-        AnnotationManager annotationManager = getService(bc, AnnotationManager.class);
-
         CreateNetworkTaskFactory createNetworkTaskFactory = new CreateNetworkTaskFactory(
                 cyApplicationManager,
                 cyNetworkManager,
@@ -55,9 +48,7 @@ public class CyActivator extends AbstractCyActivator {
                 cyNetworkViewFactory,
                 cyNetworkViewManager,
                 loadVizmapFileTaskFactory,
-                visualMappingManager,
-                textAnnotationFactory,
-                annotationManager
+                visualMappingManager
         );
 
         registerService(bc, createNetworkTaskFactory, TaskFactory.class, new Properties());
