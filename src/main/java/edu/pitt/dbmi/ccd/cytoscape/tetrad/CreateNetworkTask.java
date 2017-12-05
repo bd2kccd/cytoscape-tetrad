@@ -136,13 +136,14 @@ public class CreateNetworkTask extends AbstractTask {
         // Create the cytoscape network
         CyNetwork myNet = cyNetworkFactory.createNetwork();
 
+        // Network Table
         CyTable myNetTable = myNet.getDefaultNetworkTable();
-
-        // Create CCD annotaions column in Network Table
-        myNetTable.createListColumn(CCD_ANNOTATIONS, String.class, true);
 
         // Set the name for network in Network Table
         myNet.getRow(myNet).set(CyNetwork.NAME, "Tetrad Output Network");
+
+        // Create "__CCD_Annotaions" column in Network Table
+        myNetTable.createListColumn(CCD_ANNOTATIONS, String.class, true);
 
         // Column list
         List<String> __CCD_Annotations = new LinkedList<>();
@@ -164,8 +165,9 @@ public class CreateNetworkTask extends AbstractTask {
             // Set name for new node
             myRow.set(CyNetwork.NAME, tetradGraphNode.getName());
 
-            // Specific to Mark's work, empty list now
+            // Empty list now since we don't have annotations tied to nodes
             myRow.set(CCD_ANNOTATION_SET, new LinkedList<>());
+
             // Add to the map
             nodeName2CyNodeMap.put(tetradGraphNode.getName(), myNode);
         });
@@ -181,6 +183,7 @@ public class CreateNetworkTask extends AbstractTask {
             // Column list
             List<String> __CCD_Annotation_Set = new LinkedList<>();
 
+            // Set "interaction" and "name" in each row
             CyEdge myEdge = myNet.addEdge(nodeName2CyNodeMap.get(edge.getSource()), nodeName2CyNodeMap.get(edge.getTarget()), true);
             CyRow myRow = myEdgeTable.getRow(myEdge.getSUID());
             myRow.set(CyEdge.INTERACTION, edge.getType());
@@ -204,27 +207,34 @@ public class CreateNetworkTask extends AbstractTask {
                         .get();
             }
 
-            // Annotation on edge type
+            // Annotation on edge type with max probablity value
             // Use LinkedHashMap to keeps the keys in the order they were inserted
-            Map<String, String> edgeTypeAnnoArgs = new LinkedHashMap<>();
-            // A unique identifier for the annotation (separate from the Cytoscape generated annotation uuid)
+            Map<String, String> maxEdgeTypeAnnoArgs = new LinkedHashMap<>();
+
             String a_id = UUID.randomUUID().toString();
 
-            edgeTypeAnnoArgs.put("uuid", a_id);
-            edgeTypeAnnoArgs.put("name", maxEdgeTypeProbability.getEdgeType().name());
-            edgeTypeAnnoArgs.put("type", "string");
-            edgeTypeAnnoArgs.put("description", "edge type");
+            // A unique identifier for the annotation (separate from the Cytoscape generated annotation uuid)
+            maxEdgeTypeAnnoArgs.put("uuid", a_id);
+            // The naming information for the annotation (for example: tt, ta edge types)
+            maxEdgeTypeAnnoArgs.put("name", maxEdgeTypeProbability.getEdgeType().name());
+            // The type of the value (string, float, char, bool)
+            maxEdgeTypeAnnoArgs.put("type", "float");
+            // A description for the annotation name
+            maxEdgeTypeAnnoArgs.put("description", "The edge type that has max probability value");
 
             // Convert args into "key1=val1|key2=val2" string format
-            String formattedEdgeTypeAnnoArgs = edgeTypeAnnoArgs.entrySet()
+            String formattedEdgeTypeAnnoArgs = maxEdgeTypeAnnoArgs.entrySet()
                     .stream()
                     .map(e -> e.getKey() + "=" + e.getValue())
                     .collect(joining("|"));
 
-            // __CCD_Annotation_Set
+            // Each item in __CCD_Annotation_Set
             Map<String, String> annoSetArgs = new LinkedHashMap<>();
+            // The CCD annotation uuid from __CCD_Annotations
             annoSetArgs.put("a_id", a_id);
+            // The Cytoscape annotation uuid from __Annotations (leave this blank)
             annoSetArgs.put("cy_id", "");
+            // The type of the value is provided by the type property of the CCD annotation mapped by a_id
             annoSetArgs.put("value", Double.toString(maxEdgeTypeProbability.getProbability()));
 
             // Convert args into "key1=val1|key2=val2" string format
@@ -233,8 +243,7 @@ public class CreateNetworkTask extends AbstractTask {
                     .map(e -> e.getKey() + "=" + e.getValue())
                     .collect(joining("|"));
 
-            // Specific to Mark's work
-            // Bar separated values to be put into the "__CCD_Annotations" column in Network Table
+            // Add to the "__CCD_Annotations" column in Network Table later
             __CCD_Annotations.add(formattedEdgeTypeAnnoArgs);
 
             // Add to "__CCD_Annotation_Set" column in Edge Table
@@ -242,7 +251,7 @@ public class CreateNetworkTask extends AbstractTask {
             myRow.set(CCD_ANNOTATION_SET, __CCD_Annotation_Set);
         });
 
-        // Add all value specified columns in Network Table
+        // Add all items to "__CCD_Annotations" column in the Network Table
         myNet.getRow(myNet).set(CCD_ANNOTATIONS, __CCD_Annotations);
 
         // Add the network to Cytoscape
