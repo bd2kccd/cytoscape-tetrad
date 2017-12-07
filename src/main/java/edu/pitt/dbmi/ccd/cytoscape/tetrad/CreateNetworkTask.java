@@ -173,6 +173,9 @@ public class CreateNetworkTask extends AbstractTask {
             nodeName2CyNodeMap.put(tetradGraphNode.getName(), myNode);
         });
 
+        // Store all the unique edge types and their corresponding UUIDs for later reuse
+        HashMap<String, String> edgeType2UUIDMap = new HashMap<>();
+
         // Edge Table
         CyTable myEdgeTable = myNet.getDefaultEdgeTable();
 
@@ -208,31 +211,41 @@ public class CreateNetworkTask extends AbstractTask {
                         .get();
             }
 
-            // Annotation on edge type with max probablity value
-            // Use LinkedHashMap to keeps the keys in the order they were inserted
-            Map<String, String> maxEdgeTypeAnnoArgs = new LinkedHashMap<>();
+            // Generate a new UUID for this edge type if not found
+            String edgeTypeName = maxEdgeTypeProbability.getEdgeType().name();
 
-            String a_id = UUID.randomUUID().toString();
+            if (edgeType2UUIDMap.get(edgeTypeName) == null) {
+                // Generate new UUID
+                String a_id = UUID.randomUUID().toString();
+                // Add to map for later reuse
+                edgeType2UUIDMap.put(edgeTypeName, a_id);
 
-            // A unique identifier for the annotation (separate from the Cytoscape generated annotation uuid)
-            maxEdgeTypeAnnoArgs.put("uuid", a_id);
-            // The naming information for the annotation (for example: tt, ta edge types)
-            maxEdgeTypeAnnoArgs.put("name", maxEdgeTypeProbability.getEdgeType().name());
-            // The type of the value (string, float, char, bool)
-            maxEdgeTypeAnnoArgs.put("type", "float");
-            // A description for the annotation name
-            maxEdgeTypeAnnoArgs.put("description", "The edge type that has max probability value");
+                // Use LinkedHashMap to keeps the keys in the order they were inserted
+                Map<String, String> maxEdgeTypeAnnoArgs = new LinkedHashMap<>();
 
-            // Convert args into "key1=val1|key2=val2" string format
-            String formattedEdgeTypeAnnoArgs = maxEdgeTypeAnnoArgs.entrySet()
-                    .stream()
-                    .map(e -> e.getKey() + "=" + e.getValue())
-                    .collect(joining("|"));
+                // A unique identifier for the annotation (separate from the Cytoscape generated annotation uuid)
+                maxEdgeTypeAnnoArgs.put("uuid", a_id);
+                // The naming information for the annotation (for example: tt, ta edge types)
+                maxEdgeTypeAnnoArgs.put("name", edgeTypeName);
+                // The type of the value (string, float, char, bool)
+                maxEdgeTypeAnnoArgs.put("type", "float");
+                // A description for the annotation name
+                maxEdgeTypeAnnoArgs.put("description", "The edge type that has max probability value");
+
+                // Convert args into "key1=val1|key2=val2" string format
+                String formattedEdgeTypeAnnoArgs = maxEdgeTypeAnnoArgs.entrySet()
+                        .stream()
+                        .map(e -> e.getKey() + "=" + e.getValue())
+                        .collect(joining("|"));
+
+                // Add to the "__CCD_Annotations" column in Network Table
+                __CCD_Annotations.add(formattedEdgeTypeAnnoArgs);
+            }
 
             // Each item in __CCD_Annotation_Set
             Map<String, String> annoSetArgs = new LinkedHashMap<>();
             // The CCD annotation uuid from __CCD_Annotations
-            annoSetArgs.put("a_id", a_id);
+            annoSetArgs.put("a_id", edgeType2UUIDMap.get(edgeTypeName));
             // The Cytoscape annotation uuid from __Annotations (leave this blank)
             annoSetArgs.put("cy_id", "");
             // The type of the value is provided by the type property of the CCD annotation mapped by a_id
@@ -243,9 +256,6 @@ public class CreateNetworkTask extends AbstractTask {
                     .stream()
                     .map(e -> e.getKey() + "=" + e.getValue())
                     .collect(joining("|"));
-
-            // Add to the "__CCD_Annotations" column in Network Table later
-            __CCD_Annotations.add(formattedEdgeTypeAnnoArgs);
 
             // Add to "__CCD_Annotation_Set" column in Edge Table
             __CCD_Annotation_Set.add(formattedAnnoSetArgs);
