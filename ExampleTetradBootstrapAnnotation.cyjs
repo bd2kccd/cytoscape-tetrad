@@ -1,0 +1,104 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.5.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Network",
+    "name" : "Network",
+    "SUID" : 52,
+    "__CCD_Annotations" : [ "uuid=c6d31c2a-4d1f-4d71-a3e4-31f16a602b6a|name=ta|type=float|description=edge type", "uuid=a2998bb6-234a-48cf-b587-be7d86339ffd|name=tt|type=float|description=edge type" ],
+    "__Annotations" : [ "canvas=foreground|fontFamily=Arial|color=-16777216|x=-195.23345541937277|y=38.92121058667101|zoom=1.0213522398124517|z=0|fontSize=12|text=tt: 0.8|type=org.cytoscape.view.presentation.annotations.TextAnnotation|fontStyle=0|uuid=ad89ec05-9fb0-4603-9976-407b40dd513b", "canvas=foreground|fontFamily=Arial|color=-16777216|x=-138.5|y=-25.0|zoom=1.0|z=0|fontSize=12|text=ta: 0.2|type=org.cytoscape.view.presentation.annotations.TextAnnotation|fontStyle=0|uuid=1c5cf4df-89ab-432d-af7c-204053f27b3a" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "66",
+        "shared_name" : "X2",
+        "name" : "X2",
+        "SUID" : 66,
+        "__CCD_Annotation_Set" : [ ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : 7.0,
+        "y" : -28.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "64",
+        "shared_name" : "X1",
+        "name" : "X1",
+        "SUID" : 64,
+        "__CCD_Annotation_Set" : [ ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -232.0,
+        "y" : -30.0
+      },
+      "selected" : false
+    },
+    {
+      "data" : {
+        "id" : "62",
+        "shared_name" : "X3",
+        "name" : "X3",
+        "SUID" : 62,
+        "__CCD_Annotation_Set" : [ ],
+        "selected" : false
+      },
+      "position" : {
+        "x" : -111.99703987086885,
+        "y" : 106.86332702636719
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "72",
+        "source" : "64",
+        "target" : "66",
+        "shared_name" : "X1 (interacts with) X2",
+        "shared_interaction" : "interacts with",
+        "name" : "X1 (interacts with) X2",
+        "interaction" : "interacts with",
+        "SUID" : 72,
+        "__CCD_Annotation_Set" : [ "a_id=c6d31c2a-4d1f-4d71-a3e4-31f16a602b6a|cy_id=1c5cf4df-89ab-432d-af7c-204053f27b3a|value=0.2" ],
+        "selected" : false
+      },
+      "selected" : false
+    },
+     {
+      "data" : {
+        "id" : "74",
+        "source" : "64",
+        "target" : "62",
+        "shared_name" : "X1 (interacts with) X3",
+        "shared_interaction" : "interacts with",
+        "name" : "X1 (interacts with) X3",
+        "interaction" : "interacts with",
+        "SUID" : 74,
+        "__CCD_Annotation_Set" : [ "a_id=a2998bb6-234a-48cf-b587-be7d86339ffd|cy_id=ad89ec05-9fb0-4603-9976-407b40dd513b|value=0.8" ],
+        "selected" : false
+      },
+      "selected" : false
+    },
+    {
+      "data" : {
+        "id" : "76",
+        "source" : "62",
+        "target" : "66",
+        "shared_name" : "X2 (interacts with) X3",
+        "shared_interaction" : "interacts with",
+        "name" : "X2 (interacts with) X3",
+        "interaction" : "interacts with",
+        "SUID" : 76,
+        "__CCD_Annotation_Set" : [ ],
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}

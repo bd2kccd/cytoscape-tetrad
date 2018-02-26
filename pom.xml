@@ -1,124 +1,156 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
     <modelVersion>4.0.0</modelVersion>
-
-    <properties>
-        <bundle.symbolicName>edu.pitt.dbmi.ccd.CytoscapeTetradApp</bundle.symbolicName>
-        <bundle.namespace>edu.pitt.dbmi.ccd.cytoscape.tetrad</bundle.namespace>
-        <cytoscape.api.version>3.0.0</cytoscape.api.version>
-
-        <maven-bundle-plugin.version>2.3.4</maven-bundle-plugin.version>
-        <osgi.api.version>4.2.0</osgi.api.version>
-    </properties>
-
     <groupId>edu.pitt.dbmi.ccd.cytoscape.tetrad</groupId>
     <artifactId>cytoscape-tetrad-app</artifactId>
-    <packaging>bundle</packaging>
-    <version>1.0</version>
-
+    <version>1.1</version>
     <name>Cytoscape Tetrad App</name>
+    <packaging>bundle</packaging>
+    <description>A Cytoscape 3 app for importing the Tetrad generated JSON output file as a Network.</description>
+    
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bundle.namespace>edu.pitt.dbmi.ccd.cytoscape.tetrad</bundle.namespace>
+        <bundle.symbolicName>edu.pitt.dbmi.ccd.CytoscapeTetradApp</bundle.symbolicName>
+        <cytoscape.api.version>3.5.0</cytoscape.api.version>
+        <osgi.api.version>4.2.0</osgi.api.version>
+        <maven-bundle-plugin.version>2.5.4</maven-bundle-plugin.version>
+        <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
+        <tetrad-lib.version>6.4.0-SNAPSHOT</tetrad-lib.version>
+    </properties>
 
     <distributionManagement>
         <repository>
             <id>ccd-releases</id>
-            <url>https://ccd3.vm.bridges.psc.edu/nexus/content/repositories/releases/</url>
+            <url>https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>ccd-snapshots</id>
-            <url>https://ccd3.vm.bridges.psc.edu/nexus/content/repositories/snapshots/</url>
+            <url>https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>cytoscape_snapshots</id>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <name>Cytoscape Snapshots</name>
+            <url>http://code.cytoscape.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>cytoscape_releases</id>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <name>Cytoscape Releases</name>
+            <url>http://code.cytoscape.org/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>ccd-releases</id>
+            <url>https://cloud.ccd.pitt.edu/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>ccd-snapshots</id>
+            <url>https://cloud.ccd.pitt.edu/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
 
-<repositories>
-<repository>
-    <id>cytoscape_snapshots</id>
-    <snapshots>
-        <enabled>true</enabled>
-    </snapshots>
-    <releases>
-        <enabled>false</enabled>
-    </releases>
-    <name>Cytoscape Snapshots</name>
-    <url>http://code.cytoscape.org/nexus/content/repositories/snapshots/</url>
-</repository>
-<repository>
-    <id>cytoscape_releases</id>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-    <releases>
-        <enabled>true</enabled>
-    </releases>
-    <name>Cytoscape Releases</name>
-    <url>http://code.cytoscape.org/nexus/content/repositories/releases/</url>
-</repository>
-</repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <inherited>true</inherited>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <optimize>true</optimize>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                    <compilerArguments>
+                        <Xmaxwarns>10000</Xmaxwarns>
+                        <Xmaxerrs>10000</Xmaxerrs>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
+                        <Bundle-Version>${project.version}</Bundle-Version>
+                        <Export-Package>!${bundle.namespace}.*</Export-Package>
+                        <Private-Package>${bundle.namespace}.*</Private-Package>
+                        <Bundle-Activator>${bundle.namespace}.CyActivator</Bundle-Activator>
+                        <!-- Embed dependencies (scope=!provided|test) -->
+                        <Embed-Dependency>*;scope=!provided|test</Embed-Dependency>
+                        <Embed-Transitive>true</Embed-Transitive>
+                        <Import-Package>*;resolution:=optional</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-<build>
-<plugins>
-    <plugin>
-        <inherited>true</inherited>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
-        <configuration>
-            <source>1.7</source>
-            <target>1.7</target>
-            <optimize>true</optimize>
-            <showWarnings>true</showWarnings>
-            <showDeprecation>true</showDeprecation>
-            <compilerArguments>
-                <Xmaxwarns>10000</Xmaxwarns>
-                <Xmaxerrs>10000</Xmaxerrs>
-            </compilerArguments>
-        </configuration>
-    </plugin>
-    <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <version>${maven-bundle-plugin.version}</version>
-        <extensions>true</extensions>
-        <configuration>
-            <instructions>
-                <Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
-                <Bundle-Version>${project.version}</Bundle-Version>
-                <Export-Package>!${bundle.namespace}.*</Export-Package>
-                <Private-Package>${bundle.namespace}.*</Private-Package>
-                <Bundle-Activator>${bundle.namespace}.CyActivator</Bundle-Activator>
-            </instructions>
-        </configuration>
-    </plugin>
-</plugins>
-</build>
+    <dependencies>
+        <!-- Set the scope to provided for all Cytoscape and OSGi API dependencies -->
+        <!-- So maven-bundle-plugin won't include these dependencies with the bundle jar. -->
+        <dependency>
+            <groupId>org.cytoscape</groupId>
+            <artifactId>swing-application-api</artifactId>
+            <version>${cytoscape.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.cytoscape</groupId>
+            <artifactId>work-api</artifactId>
+            <version>${cytoscape.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.cytoscape</groupId>
+            <artifactId>service-api</artifactId>
+            <version>${cytoscape.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>${osgi.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.cytoscape</groupId>
+            <artifactId>core-task-api</artifactId>
+            <version>${cytoscape.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.cytoscape</groupId>
+            <artifactId>viewmodel-api</artifactId>
+            <version>${cytoscape.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- This dependency has no <scope>provided</scope>, and will be embeded in bundle jar -->
+        <dependency>
+            <groupId>edu.cmu</groupId>
+            <artifactId>tetrad-lib</artifactId>
+            <version>${tetrad-lib.version}</version>
+        </dependency>
+    </dependencies>
 
-<dependencies>
-<dependency>
-    <groupId>org.cytoscape</groupId>
-    <artifactId>swing-application-api</artifactId>
-    <version>${cytoscape.api.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.cytoscape</groupId>
-    <artifactId>work-api</artifactId>
-    <version>${cytoscape.api.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.cytoscape</groupId>
-    <artifactId>service-api</artifactId>
-    <version>${cytoscape.api.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.osgi</groupId>
-    <artifactId>org.osgi.core</artifactId>
-    <version>${osgi.api.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.cytoscape</groupId>
-    <artifactId>core-task-api</artifactId>
-    <version>3.0.0</version>
-</dependency>
-
-</dependencies>
-
-        </project>
+</project>
