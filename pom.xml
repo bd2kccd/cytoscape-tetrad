@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.pitt.dbmi.ccd.cytoscape.tetrad</groupId>
     <artifactId>cytoscape-tetrad-app</artifactId>
-    <version>1.1</version>
+    <version>1.1.1</version>
     <name>Cytoscape Tetrad App</name>
     <packaging>bundle</packaging>
     <description>A Cytoscape 3 app for importing the Tetrad generated JSON output file as a Network.</description>
