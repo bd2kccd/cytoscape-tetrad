@@ -245,8 +245,8 @@ public class CreateNetworkTask extends AbstractTask {
                 Map<String, String> annoSetArgs = new LinkedHashMap<>();
                 // The CCD annotation uuid from __CCD_Annotations
                 annoSetArgs.put("a_id", edgeType2UUIDMap.get(edgeTypeName));
-                // The Cytoscape annotation uuid from __Annotations (leave this blank)
-                annoSetArgs.put("cy_id", "");
+                // The Cytoscape annotation uuid
+                annoSetArgs.put("cy_id", UUID.randomUUID().toString());
                 // The type of the value is provided by the type property of the CCD annotation mapped by a_id
                 annoSetArgs.put("value", Double.toString(maxEdgeTypeProbability.getProbability()));
 
