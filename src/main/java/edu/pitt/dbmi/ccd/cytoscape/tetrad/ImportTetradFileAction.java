@@ -21,7 +21,7 @@ public class ImportTetradFileAction extends AbstractCyAction {
             final DialogTaskManager dialogTaskManager,
             final CreateNetworkTaskFactory createNetworkTaskFactory) {
 
-        super("Tetrad");
+        super("Tetrad Graph JSON");
 
         // File -> Import -> Network
         setPreferredMenu("File.Import.Network");

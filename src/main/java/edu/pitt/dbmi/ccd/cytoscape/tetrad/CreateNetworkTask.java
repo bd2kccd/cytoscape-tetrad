@@ -22,6 +22,7 @@ import org.cytoscape.view.vizmap.VisualMappingManager;
 import org.cytoscape.view.vizmap.VisualStyle;
 import org.cytoscape.work.AbstractTask;
 import org.cytoscape.work.TaskMonitor;
+import org.json.JSONObject;
 
 public class CreateNetworkTask extends AbstractTask {
 
@@ -62,11 +63,19 @@ public class CreateNetworkTask extends AbstractTask {
         Path file = Paths.get(fileName);
 
         try {
-            // Read Tetrad generated json file
+            // Read Tetrad generated json file 
             String contents = new String(Files.readAllBytes(file));
 
+            JSONObject jsonObj = new JSONObject(contents);
+            
             // Parse to Tetrad graph
-            tetradGraph = JsonUtils.parseJSONObjectToTetradGraph(contents);
+            // If tetrad json file saved from Dag, SemGraph, or TimelagGraph, we'll have the "graph" property
+            // Otherwise a regular tetrad graph will save the json without wrapping into "graph" property
+            if (jsonObj.has("graph")) {
+                tetradGraph = JsonUtils.parseJSONObjectToTetradGraph(jsonObj.getJSONObject("graph"));
+            } else {
+                tetradGraph = JsonUtils.parseJSONObjectToTetradGraph(jsonObj);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
